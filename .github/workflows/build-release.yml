@@ -38,7 +38,7 @@ jobs:
         with:
           files: dist/InterviewerHelper.exe
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
   build-macos:
     runs-on: macos-latest
@@ -78,4 +78,4 @@ jobs:
         with:
           files: dist/InterviewerHelper.dmg
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
